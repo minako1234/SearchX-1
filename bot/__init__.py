@@ -5,7 +5,7 @@ import string
 import requests
 import subprocess
 import socket
-
+import time
 import telegram.ext as tg
 
 from dotenv import load_dotenv
@@ -190,7 +190,7 @@ else:
     LOGGER.error("drive_list file is missing")
     exit(1)
 
-telegra_ph_accounts_count = 5
+telegra_ph_accounts_count = 20
 telegra_ph = []
 # Generate Telegraph Token
 for i in range(telegra_ph_accounts_count):
